@@ -1,0 +1,30 @@
+version: "3.3"
+
+services:
+  app:
+    container_name: go-chi-api
+    image: go-chi-api
+    build: .
+    ports:
+      - 9000:9000
+    networks:
+      - go-chi-api-network
+    depends_on:
+      - db
+
+  db:
+    container_name: db
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=api_todo
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - go-chi-api-network
+
+networks:
+  go-chi-api-network:
+    driver: bridge
