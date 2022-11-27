@@ -1,10 +1,11 @@
 package handlers
 
 import (
-	"api/models"
 	"encoding/json"
 	"log"
 	"net/http"
+
+	"github.com/osor1o/go-chi-api/models"
 )
 
 func List(w http.ResponseWriter, r *http.Request) {

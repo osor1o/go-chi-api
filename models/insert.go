@@ -1,6 +1,6 @@
 package models
 
-import "api/db"
+import "github.com/osor1o/go-chi-api/db"
 
 func Insert(todo Todo) (id int64, err error) {
 	conn, err := db.OpenConnection()

@@ -1,6 +1,6 @@
 package models
 
-import "api/db"
+import "github.com/osor1o/go-chi-api/db"
 
 func Delete(id int64) (int64, error) {
 	conn, err := db.OpenConnection()

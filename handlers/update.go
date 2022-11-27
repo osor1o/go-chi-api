@@ -1,13 +1,13 @@
 package handlers
 
 import (
-	"api/models"
 	"encoding/json"
 	"log"
 	"net/http"
 	"strconv"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/osor1o/go-chi-api/models"
 )
 
 func Update(w http.ResponseWriter, r *http.Request) {

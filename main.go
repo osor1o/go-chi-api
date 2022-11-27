@@ -1,12 +1,12 @@
 package main
 
 import (
-	"api/configs"
-	"api/handlers"
 	"fmt"
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/osor1o/go-chi-api/configs"
+	"github.com/osor1o/go-chi-api/handlers"
 )
 
 func main() {

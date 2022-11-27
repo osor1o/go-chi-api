@@ -1,11 +1,11 @@
 package db
 
 import (
-	"api/configs"
 	"database/sql"
 	"fmt"
 
 	_ "github.com/lib/pq"
+	"github.com/osor1o/go-chi-api/configs"
 )
 
 func OpenConnection() (*sql.DB, error) {

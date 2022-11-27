@@ -1,4 +1,4 @@
-module api
+module github.com/osor1o/go-chi-api
 
 go 1.19
 
